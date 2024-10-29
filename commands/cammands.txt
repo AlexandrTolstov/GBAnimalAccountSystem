@@ -1,0 +1,24 @@
+Task 1
+
+cat > pets
+cat > packAnimals
+cat > packAnimals > animals
+mv animals mansFriends
+
+Task 2
+
+mkdir Kennel
+mv mansFriends ~/Kennel
+cd ~/Kennel
+
+Task 3
+
+sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.33-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.33-1_all.deb
+sudo apt-get update
+
+Task 4
+
+sudo dpkg -i apacheds-2.0.0.AM27-amd.deb
+sudo systemctl stop apache2
+sudo dpkg -r apache2
