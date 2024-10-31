@@ -2,23 +2,11 @@ package classes;
 
 import java.util.Date;
 
-public class PackedAnimals implements Animals {
-    private String name;
-    private Date birthday;
-    private String command;
+public class PackedAnimals extends Animals {
 
-    @Override
-    public String getName() {
-        return name;
-    }
+    public PackedAnimals(String name, Date birthday) {
+        super(name, birthday);
 
-    @Override
-    public Date getBirthday() {
-        return birthday;
-    }
-
-    @Override
-    public String getCommand() {
-        return command;
+        this.animalClass = "Вьючные животные";
     }
 }

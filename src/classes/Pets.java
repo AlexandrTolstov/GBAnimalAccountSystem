@@ -2,28 +2,23 @@ package classes;
 
 import java.util.Date;
 
-public class Pets implements Animals{
-    private String name;
-    private Date birthday;
-    private String command;
+public class Pets extends Animals{
+
     private String breed;
 
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public Date getBirthday() {
-        return birthday;
-    }
-
-    @Override
-    public String getCommand() {
-        return command;
+    public Pets(String name, Date birthday, String breed) {
+        super(name, birthday);
+        this.breed = breed;
+        this.animalClass = "Домашние животные";
     }
 
     public String getBreed(){
         return breed;
+    }
+
+    @Override
+    public String toString() {
+        String str = super.toString();
+        return str.substring(0, str.length() - 1) + "; Порода: " + breed + " ]";
     }
 }
